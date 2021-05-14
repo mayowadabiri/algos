@@ -11,11 +11,11 @@ const isolate = (str) => {
       each.push(str[i]);
     }
   }
-  let count = 0;1
+  let count = 0;
   for (let key of letters) {
     if (key.length > 2) {
       const removed = key.splice(2).join("");
-      string += `${key.join("")}[${removed}]`
+      string += `${key.join("")}[${removed}]`;
       count++;
     } else {
       for (let j = 0; j < key.length; j++) {
@@ -23,7 +23,8 @@ const isolate = (str) => {
       }
     }
   }
-  return [string, count]
+  return [string, count];
 };
 
-console.log(isolate("aaaabbcdefffffffgpppppppijjkkkkkkkkllllll"))
+console.log(isolate("aaaabbcdefffffffgpppppppijjkkkkkkkkllllllmmmmm"));
+// ([aa[aa]bbcdeff[fffff]gpp[pppp], 3])

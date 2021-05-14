@@ -12,7 +12,6 @@ const romanNumeral = (arr) => {
   ];
 
   for (let i = 0; i < str.length; i++) {
-    console.log(count)
     let rn = 0;
     if (
       (str[i] === "I" && (str[i + 1] === "V" || str[i + 1] === "X")) ||
@@ -45,4 +44,4 @@ const romanNumeral = (arr) => {
   return count;
 };
 
-console.log(romanNumeral("MMMCDXXIII"));
+console.log(romanNumeral("MMMCDXLIV"));

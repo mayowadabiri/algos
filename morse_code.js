@@ -67,12 +67,11 @@ const decodeMorse = (morse) => {
     });
   }
 
-
   for (let key of arr) {
-      const moreseValue = morseArr.find((morse) => morse.code === key);
-      string += moreseValue.value
-    }
-    console.log(string)
+    const moreseValue = morseArr.find((morse) => morse.code === key);
+    string += moreseValue.value;
+  }
+  console.log(string);
 };
 
 decodeMorse("-- .- -.-- --- .-- .-");
